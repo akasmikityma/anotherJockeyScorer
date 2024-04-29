@@ -15,12 +15,12 @@ export default function GameRoom() {
       console.log(alltheSeletedplayers)
 
   return (
-   <div className='p-3  bg-black'>
-     <div className='flex flex-row justify-center items-center min-h-screen'>
+   <div className='p-6 flex flex-col justify-center bg-black min-h-screen gap-6'>
+     <div className='grid grid-rows md:grid-cols-2 gap-4 justify-center items-cente px-14'>
         {alltheSeletedplayers&&alltheSeletedplayers.map((name)=>(
           <OntheGameCard key={name} name={name}/>
         ))}
-    </div>
+    </div> 
         <div className='flex justify-center'>
         <button className='bg-yellow-200 text-black p-2 ' onClick={gobackHandle}>go back</button>
         </div>

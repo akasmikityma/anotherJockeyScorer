@@ -18,7 +18,7 @@ export default function CardsComp() {
     console.log(alltheSelected)
   };
   return (
-    <div className='grid  grid-rows md:grid-cols-3 gap-6 p-8 bg-blue-950 select:bg-red-200'>
+    <div className='grid  grid-rows md:grid-cols-3 gap-6 p-8 bg-blue-950'>
       {playersDatathisTime&&playersDatathisTime.map((player)=>(
         <IindiCard key={player.url} imgsrc={player.url} name={player.name}
         isSelected={alltheSelected.includes(player.name)} // Check by name
